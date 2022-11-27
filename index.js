@@ -38,6 +38,7 @@ obj described by the string.
 app.use(express.json()) 
 app.use(requestLogger)
 app.use(cors()) // allows for requests from all origin 
+app.use(express.static('build'))
 
 // const app = http.createServer((request, response) => {
 //     response.writeHead(200, { 'Content-Type': 'application/json' })
